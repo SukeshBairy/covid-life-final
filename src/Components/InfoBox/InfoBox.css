@@ -3,15 +3,38 @@
   cursor: pointer;
 }
 
+.darkinfoBox {
+  flex: 1;
+  cursor: pointer;
+  background-color: #333 !important;
+  color: white !important;
+}
+
 .infoBox:not(:last-child) {
+  margin-right: 15px;
+}
+
+.darkinfoBox:not(:last-child) {
   margin-right: 15px;
 }
 
 .infoBox--selected {
   border-top: 10px solid greenyellow;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+}
+
+.darkinfoBox--selected {
+  border-top: 10px solid greenyellow;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
 }
 
 .infoBox--red {
+  border-color: red;
+}
+
+.darkinfoBox--red {
   border-color: red;
 }
 
@@ -19,7 +42,18 @@
   color: lightgreen !important;
 }
 
+.darkinfoBox__cases--green {
+  color: lightgreen !important;
+}
+
 .infoBox__cases {
+  color: #cc1034;
+  font-weight: 600;
+  font-size: 1.75rem;
+  margin-bottom: 0.5rem;
+}
+
+.darkinfoBox__cases {
   color: #cc1034;
   font-weight: 600;
   font-size: 1.75rem;
@@ -31,4 +65,15 @@
   font-weight: 700;
   font-size: 0.8rem;
   margin-top: 15px;
+}
+
+.darkinfoBox__total {
+  color: white !important;
+  font-weight: 700;
+  font-size: 0.8rem;
+  margin-top: 15px;
+}
+
+.darkinfoBox__title {
+  color: white !important;
 }

@@ -12,6 +12,7 @@ body {
   justify-content: space-evenly;
   padding: 20px;
   overflow: hidden;
+  padding-top: 30px;
 }
 
 .app__left {
@@ -20,6 +21,11 @@ body {
 
 .app__dropdown {
   background-color: white;
+}
+
+.darkapp__dropdown {
+  background-color: #333;
+  color: white !important;
 }
 
 .app__header {
@@ -42,20 +48,67 @@ body {
 .app__right {
   display: flex;
   flex-direction: column;
+  margin-top: 50px;
+}
+
+.darkapp__right {
+  display: flex;
+  flex-direction: column;
+  background-color: #333 !important;
+  scrollbar-width: thin;
+  margin-top: 50px;
 }
 
 .app__right .MuiCardContent-root {
   display: flex;
   flex-direction: column;
   flex-grow: 1;
+  scrollbar-width: thin;
+}
+
+.darkapp__right .MuiCardContent-root {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  background-color: #333 !important;
 }
 
 .app__graphTitle {
   margin-top: 20px;
 }
 
+.darkapp__graphTitle {
+  margin: 20px 0;
+  color: white !important;
+  padding: 0.5rem;
+}
+
 .app__graph {
   flex-grow: 1;
+}
+
+.app__menudropdown {
+  background-color: white !important;
+}
+
+.darkapp__menudropdown {
+  background-color: #333 !important;
+  color: white !important;
+  margin: 0 !important;
+}
+
+.darkapp__menudropdown::-webkit-scrollbar {
+  width: 25px;
+}
+
+.app__toggle {
+  padding: 10px;
+  width: 100px;
+  font-weight: 800;
+  border-radius: 5px;
+  background-color: #333;
+  border-width: 0;
+  color: white;
 }
 
 @media only screen and (max-width: 990px) {

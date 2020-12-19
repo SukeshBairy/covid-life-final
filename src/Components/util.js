@@ -59,6 +59,15 @@ export const showDataOnMap = (data, casesType = "cases") =>
           <div className="info-deaths">
             Deaths: {numeral(country.deaths).format("0,0")}
           </div>
+          <div className="info-deaths">
+            Recovery Rate:
+            {numeral(
+              (numeral(country.recovered)._value /
+                numeral(country.cases)._value) *
+                100
+            ).format("0.00")}
+            %
+          </div>
         </div>
       </Popup>
     </Circle>

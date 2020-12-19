@@ -5,13 +5,36 @@
   color: #6a5d5d;
 }
 
+.table::-webkit-scrollbar {
+  width: 10px;
+  color: white;
+}
+
+.darktable {
+  margin-top: 20px;
+  overflow: auto;
+  height: 400px;
+  color: #eeee;
+  background-color: #333;
+}
+
+.darktable::-webkit-scrollbar {
+  width: 25px;
+}
+
 .table tr {
   display: flex;
   justify-content: space-between;
+  scrollbar-width: thin;
 }
 
 .table td {
   padding: 0.5rem;
+}
+
+.darktable td {
+  padding: 0.5rem;
+  color: white;
 }
 
 .table tr:nth-of-type(odd) {
