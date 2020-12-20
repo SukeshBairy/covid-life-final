@@ -16,12 +16,10 @@ export const InfoBox = ({
       onClick={props.onClick}
       className={
         mode === true
-          ? `darkinfoBox ${active && "darkinfoBox--selected"} ${
-              isRed && "darkinfoBox--red"
-            } `
-          : `infoBox ${active && "infoBox--selected"} ${
-              isRed && "infoBox--red"
-            } `
+          ? `darkinfoBox
+             `
+          : `infoBox
+             `
       }
     >
       <CardContent>

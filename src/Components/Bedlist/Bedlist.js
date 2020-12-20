@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
 
-function BedList() {
+function Bedlist() {
   const [data, setData] = useState([]);
 
   useEffect(async () => {
@@ -34,4 +34,4 @@ function BedList() {
   );
 }
 
-export default BedList;
+export default Bedlist;

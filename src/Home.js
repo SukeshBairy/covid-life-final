@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import "./App.css";
+import "./Home.css";
 import {
   MenuItem,
   FormControl,
@@ -77,7 +77,13 @@ function Home() {
     <div className="app">
       <div className="app__left">
         <div className="app__header">
-          <h2>COVID-19 TRACKER</h2>
+          <h2
+            className={
+              darkmode === true ? "darkapp__header" : "lightapp__header"
+            }
+          >
+            DASHBOARD
+          </h2>
           <FormControl
             className={
               darkmode === true ? "darkapp__dropdown" : "app__dropdown"
@@ -127,6 +133,7 @@ function Home() {
             total={prettyPrintStat(countryInfo.cases)}
             mode={darkmode}
           />
+
           <InfoBox
             active={casesType === "recovered"}
             onClick={(e) => setCasesType("recovered")}
@@ -135,6 +142,7 @@ function Home() {
             total={prettyPrintStat(countryInfo.recovered)}
             mode={darkmode}
           />
+
           <InfoBox
             isRed
             active={casesType === "deaths"}

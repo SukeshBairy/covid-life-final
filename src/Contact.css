@@ -1,0 +1,119 @@
+.contact {
+  width: 100%;
+  min-height: 100vh;
+  overflow: hidden;
+}
+
+.contactHeading {
+  margin-left: 50px;
+  margin-top: 70px;
+}
+
+.contactCards {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-left: 100px;
+}
+
+.contactCard {
+  width: 240px;
+  height: 250px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: whitesmoke;
+  border: 1px solid lightgrey;
+  margin: 50px;
+  padding: 20px 50px;
+  border-radius: 12px;
+}
+
+.contactCard > img {
+  border-radius: 50%;
+  object-fit: contain;
+  width: 100px;
+  height: 100px;
+  margin-bottom: 20px;
+}
+
+.contactCard > h3 {
+  margin-bottom: 5px;
+}
+
+.contactCard > h4 {
+  margin-bottom: 5px;
+}
+
+/* .contactCard > img {
+  height: 350px;
+  width: 450px;
+  object-fit: contain;
+} */
+
+.formDetails {
+  margin-left: 30px;
+  margin-top: 30px;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+#contactlabel___name {
+  margin-right: 5px;
+}
+
+.form {
+  margin-bottom: 5px;
+  margin-left: 20%;
+}
+
+.contact__phone,
+.contact__email,
+.contact__name {
+  margin-top: 5px;
+  margin-bottom: 10px;
+  width: 35%;
+  border-radius: 12px;
+  padding: 5px 10px;
+  outline: none;
+}
+
+.contactlabel__phone,
+.contactlabel__email,
+.contactlabel__name {
+  width: 180px;
+}
+
+.submitButton {
+  font-size: 17px;
+  font-weight: 700;
+  padding: 15px 43px 19px 44px;
+  background-image: linear-gradient(
+    to right,
+    #7526d7 0%,
+    #f269fd 50%,
+    #7526d7 100%
+  );
+  color: white;
+  display: inline-block;
+  text-transform: capitalize;
+  background-size: 200% auto;
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -ms-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+  border-radius: 36px;
+  border: none;
+  position: relative;
+  bottom: 50px;
+  outline-color: aquamarine;
+  cursor: pointer;
+  margin-top: 70px !important;
+  margin-left: 35%;
+  width: 200px !important;
+}
+
+.submitButton:hover {
+  background-position: right center;
+}
